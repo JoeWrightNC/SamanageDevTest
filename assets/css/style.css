@@ -82,6 +82,8 @@ body {
   height:auto;
   display: flex;
   justify-content: center;
+  flex-wrap:wrap;
+  align-items:center;
 }
 
 /* Features */
@@ -89,9 +91,16 @@ body {
   margin-top: 100px;
 }
 
+.featuresFlex {
+  display: flex;
+  align-items: flex-end;
+}
 .featuresImg {
-  width:41.65vw;
+  width:auto;
   height:auto;
+  padding-left:8.33vw;
+  flex-shrink: 1;
+  align-self: flex-end;
 }
 
 .featuresContent {
@@ -99,6 +108,8 @@ body {
   flex-direction: column;
   text-align:left;
   align-self:flex-end;
+  padding-left:50px;
+  padding-right:8.33vw;
 }
 
 .featuresHead {
@@ -155,23 +166,24 @@ ul {
   font-size:1.5em;
 }
 
-.actionButtons {
-  display: flex;
-  justify-content: center;
-  font-weight:500;
-  margin-top:15px;
-}
-
 .btnQuote {
   background-color: #fbcd1b;
   color: black !important;
   font-size:2em;
 }
 
+.quoteButtons {
+  display: flex;
+  justify-content: center;
+  font-weight:500;
+  margin-top:20px;
+}
+
 /* Social Icons */
 .socialIcons {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   padding-top:50px;
   padding-bottom:50px;
   width:100vw;
@@ -194,4 +206,141 @@ footer {
   font-size:.75em;
   font-weight:300;
   color:black;
+}
+
+/*Portrit Phone Media Queries*/
+@media only screen and (min-width: 320px) and (max-width: 479px){ 
+  /* Customer Logos */
+  .customerLogos {
+    width: 100%;
+    max-width:100vw;
+    background-color: #eceef1;
+    height:auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero {
+    width:100vw;
+    height: 400px;
+    background-image: url("../images/samanage-header-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+  }
+
+  .heroBanner {
+    margin-top: 20px;
+  }
+
+  .featuresFlex {
+    flex-direction: column-reverse;
+  }
+
+  .featuresImg {
+    width:320px;
+  }
+/*Quote Request*/
+.quoteRequest {
+  width:100vw;
+  height: 300px;
+  background-image: url("../images/samanage-accordian-form-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.quoteBanner {
+  text-align:center;
+  color:white;
+  width:100vw;
+  margin-top:30px;
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+.quoteHeader {
+  font-weight:200;
+  font-size:1.8em;
+}
+
+.quoteText {
+  font-weight:200;
+  font-size:.9em;
+}
+
+.quoteButtons {
+  margin-top:10px;
+}
+
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top:50px;
+    padding-bottom:50px;
+    width:100vw;
+  }
+
+  .socialIconImg {
+    padding-left:6vw;
+    padding-right:6vw;
+    padding-top:5vh;
+  }
+}
+
+/*Tablet Media Queries*/
+@media only screen and (min-width: 768px) and (max-width: 1024px){ 
+
+  .customerLogos {
+    width: 100%;
+    max-width:100vw;
+    background-color: #eceef1;
+    height:auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero {
+    height:300px;
+  }
+
+  .heroBanner {
+    margin-top: 20px;
+  }
+
+  .featuresFlex {
+    flex-direction: column-reverse;
+  }
+
+  .quoteRequest {
+    height: 180px;
+  }
+  
+  .quoteBanner {
+    margin-top:15px;
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+
+  .quoteHeader {
+    font-weight:200;
+    font-size:2em;
+  }
+  
+  .quoteText {
+    font-weight:200;
+    font-size:1em;
+  }
+  
+  
+  .btnQuote {
+    background-color: #fbcd1b;
+    color: black !important;
+    font-size:1em;
+  }
+
+  .quoteButtons {
+    margin-top:10px;
+  }
 }
