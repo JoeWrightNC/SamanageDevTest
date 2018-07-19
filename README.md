@@ -4,6 +4,8 @@ In this exercise, I was asked by the great team at Samanage to demonstrate my fr
 
 No branching strategy was utilized, as the total project was completed in 3 commits.
 
+To view the deployed page, click [here](https://joewrightnc.github.io/SamanageDevTest/).
+
 ## Technology
 On the frontend, the app uses `HTML5`, `CSS3`, and `Bootstrap 4.0`.  The general page utilized flexbox heavily and in a few different ways to demonstrate proficiency. 
 There is no backend component to this application.
@@ -16,8 +18,8 @@ There is no backend component to this application.
 ![Desktop](assets/images/readme/fullscreen.gif)
 
 #### Application on an iPad
-![iPad](assets/images/readme/fullscreen.gif)
+![iPad](assets/images/readme/iPad.gif)
 
 #### Application on an iPhone
-![iPhone](assets/images/readme/fullscreen.gif)
+![iPhone](assets/images/readme/iPhone.gif)
 
