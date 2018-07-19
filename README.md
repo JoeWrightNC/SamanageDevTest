@@ -18,8 +18,8 @@ There is no backend component to this application.
 ![Desktop](assets/images/readme/fullscreen.gif)
 
 #### Application on an iPad
-![iPad](assets/images/readme/iPad.gif)
+![iPad](assets/images/readme/ipad.gif)
 
 #### Application on an iPhone
-![iPhone](assets/images/readme/iPhone.gif)
+![iPhone](assets/images/readme/iphone.gif)
 
